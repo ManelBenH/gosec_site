@@ -1,92 +1,127 @@
-[
-  {
-    "name": "Asher Altena ",
-    "role": "",
-    "initials": "",
-    "img": "images/Asher.png",
-    "hue": 325,
-    "linkedin": "https://www.linkedin.com/in/ashr-ai",
-    "github": "https://github.com/ashr-ai",
-    "bio": "Mon parcours en service à la clientèle, en sécurité chez GardaWorld et comme musicien indépendant m’a permis de développer de bonnes compétences en résolution de problèmes et gestion des priorités, en plus de développer mon sens de l’autonomie. J’ai aussi pu mettre en pratique mon esprit d’analyse et souci du détail dans mon dernier poste d’agent de sécurité où je devais observer attentivement les situations, identifier rapidement les anomalies et intervenir de façon appropriée. Intéressé depuis longtemps par l’univers du numérique, je souhaite maintenant mettre ces forces au service d’un poste de testeur logiciel ou de développeur Web. "
-  },
-  {
-    "name": "Boutaina Kechchany",
-    "role": "",
-    "initials": "",
-    "img": "images/Boutaina.jpg",
-    "hue": 150,
-    "linkedin": "https://www.linkedin.com/in/boutaina-ky",
-    "github": "https://github.com/kjustBou",
-    "bio": "Mon intérêt pour la technologie, les arts et la psychologie, combiné à mon expérience en service à la clientèle et en bijouterie-joaillerie, m’a permis de développer une grande minutie, un œil perspicace et un souci de l'expérience client. Curieuse et toujours prête à apprendre, je suis particulièrement attirée par l’investigation numérique, où l’analyse, la recherche de motifs et la résolution d’énigmes rejoignent naturellement mes intérêts. Je recherche actuellement une première expérience en développement Web, en sécurité générale ou en investigation numérique, afin de mettre à profit ma polyvalence et ma capacité d'adaptation. "
-  },
-  {
-    "name": "Christopher Tremblay",
-    "role": "",
-    "initials": "",
-    "img": "images/test.jpg",
-    "hue": 15,
-    "linkedin": "",
-    "github": "",
-    "bio": "Mon expérience en tant que technicien en audiovisuel m’a permis de développer de solides compétences techniques et méthodologique, notamment sur la résolution de problèmes, la connectivité et la gestion de flux de données. Intéressé par la technologie et la création de contenu, je souhaite maintenant mettre ces forces ainsi que mes compétences en troubleshooting, virtualisation, réseautique, HTML, CSS, JavaScript et Bash au service d’un premier poste de soutien aux utilisateurs ou de développeur Web. "
-  },
-  {
-    "name": "Deimons Hahamovs",
-    "role": "",
-    "initials": "",
-    "img": "images/Deimons.jpg",
-    "hue": 205,
-    "linkedin": "https://www.linkedin.com/in/deimons-hahamovs-045941412/",
-    "github": "https://github.com/Rex-117",
-    "bio": "Après plusieurs années comme technicien en soutien informatique et technicien autonome, j'ai développé de solides compétences en dépannage, en administration réseau et en gestion de systèmes. Passionné de technologie, de jeux vidéo et audiophile dans l'âme, j'aime aussi monter et tester des ordinateurs. Je recherche aujourd'hui un poste où je pourrai mettre à profit ma curiosité technique et mes compétences acquises durant mon parcours, que ce soit en développement web, en cybersécurité ou en soutien informatique avancé. "
-  },
-  {
-    "name": "Harley Rankin ",
-    "role": "",
-    "initials": "",
-    "img": "images/test.jpg",
-    "hue": 275,
-    "linkedin": "",
-    "github": "",
-    "bio": "Suite à une première expérience en service à la clientèle, je souhaite poursuivre mon parcours en élargissant mes compétences vers le développement Web, le soutien informatique et la réseautique. Passionné par l’informatique et la technologie, j’aime résoudre des problèmes, apprendre de nouveaux outils et mettre mes connaissances en pratique à travers des projets concrets. Je recherche un poste dans le domaine des TI où je pourrai mettre à profit mes compétences, contribuer à une équipe et continuer à développer mon expertise. "
-  },
-  {
-    "name": "Manel Ben Halima",
-    "role": "",
-    "initials": "",
-    "img": "images/Manel.jpg",
-    "hue": 45,
-    "linkedin": "https://www.linkedin.com/in/manel-ben-halima-666ab3201",
-    "github": "https://github.com/ManelBenH",
-    "bio": "Tout a commencé avec un diplôme en design obtenu en 2016. Depuis, je n’ai jamais vraiment arrêté de créer, d’animer et de recommencer. Un logo qui prend vie, une charte qui tient debout, une animation qui donne le rythme juste : c'est ce langage-là que je parle le mieux. J’ajoute aujourd’hui une nouvelle corde à mon arc, le code, en particulier le HTML, le CSS et le JavaScript, pour élargir ma vision et rester polyvalente. Je suis actuellement à la recherche d’un emploi en développement Web et en création de contenu numérique, où je pourrai mettre à profit ma créativité et mes compétences techniques. "
-  },
-  {
-    "name": "Marc Maurice Freeman",
-    "role": "",
-    "initials": "",
-    "img": "images/Marc Maurice.png",
-    "hue": 190,
-    "linkedin": "https://www.linkedin.com/in/marc-maurice-freeman-324816394",
-    "github": "https://github.com/shadownet21",
-    "bio": "Je suis un professionnel TI avec plus de 5 ans d’expérience en développement Web, soutien informatique et gestion de bases de données. J’ai conçu des applications et accompagné un réseau de plus de 120 institutions financières. Curieux et orienté vers les solutions, j’aime comprendre les besoins, structurer le travail et transformer des problèmes complexes en solutions concrètes et fiables. Je souhaite mettre cette polyvalence et mon sens de l’organisation au service de vos projets. "
-  },
-  {
-    "name": "Mouad El Haddadi ",
-    "role": "",
-    "initials": "",
-    "img": "images/Mouad.jpg",
-    "hue": 265,
-    "linkedin": "https://www.linkedin.com/in/mouad-el-haddadi/",
-    "github": "https://github.com/mouadm0uad",
-    "bio": "Fort de plus de trois ans d'expérience en service à la clientèle bilingue et titulaire d’un baccalauréat en administration des affaires, je possède de solides compétences en résolution de problèmes, en gestion du stress et en travail d'équipe. Mordu de technologie, j'ai développé au fil des années une curiosité naturelle pour les systèmes informatiques et une grande facilité à évoluer dans des environnements techniques. Je suis maintenant à la recherche d'un poste en soutien technique où je pourrai mettre à profit mon sens du service à la clientèle et ma capacité d'adaptation pour contribuer efficacement à une équipe. "
-  },
-  {
-    "name": "Schleiden Alcius ",
-    "role": "",
-    "initials": "",
-    "img": "images/Schleiden.jpg",
-    "hue": 340,
-    "linkedin": "https://www.linkedin.com/in/schleiden-a-61621038a/",
-    "github": "https://github.com/schleidenalcius",
-    "bio": "Bien que je sois encore au début de mon apprentissage en développement Web, j’ai développé de solides compétences en HTML, CSS et JavaScript grâce à mon parcours chez CyberCap ainsi qu’à mes cours en sciences informatiques au Collège Bois-de-Boulogne. Particulièrement intéressé par les jeux vidéo et la philosophie, j’ai conçu un site Web interactif sous forme de jeu musical et un second consacré aux grands esprits qui ont marqué l’histoire. Je désire maintenant poursuivre ma carrière dans un poste de développeur Web et apprendre rapidement au sein d'une équipe. "
-  }
-]
+{
+  "modulesData": [
+    {
+      "titre": "Développement web et programmation",
+      "descriptif": "Les participants apprennent à construire des sites web de zéro, des bases du HTML et du CSS jusqu'à des applications dynamiques avec PHP et une base de données. Chaque projet est déployé en ligne et consultable, pas seulement théorique. Les finissants arrivent avec un portfolio de réalisations concrètes, incluant plusieurs projets web fonctionnels et un projet capstone intégrateur. La programmation orientée objet est abordée de façon ciblée, pour développer une base solide plutôt qu'une surface de connaissances éparpillées. Un employeur peut s'attendre à des candidats capables de contribuer rapidement à un projet web existant.",
+      "logo": "assets/images.png"
+    },
+    {
+      "titre": "Intégration et utilisation des services d'IA",
+      "descriptif": "Les participants apprennent à intégrer des services d'intelligence artificielle dans des projets concrets, notamment via la construction d'un formulaire interactif avec validation. L'approche privilégiée est pratique : l'IA est traitée comme un outil de développement parmi d'autres, pas comme un sujet théorique isolé. Cette compétence s'insère directement dans le parcours de développement web du programme. Les finissants comprennent comment intégrer ces outils dans un flux de travail réel. Pour un employeur, cela signifie des candidats déjà familiers avec l'usage pratique de l'IA en contexte professionnel.",
+      "logo": "assets/images.png"
+    },
+    {
+      "titre": "Éthique numérique et cybersécurité",
+      "descriptif": "Les participants développent des réflexes de sécurité numérique directement applicables en milieu de travail : gestion des accès, bonnes pratiques de mots de passe, hygiène numérique générale. Le module couvre aussi les enjeux éthiques propres au domaine technologique. Cette formation prépare les finissants à agir de façon responsable dans un environnement professionnel, peu importe le poste occupé. Les organismes partenaires peuvent s'attendre à des candidats sensibilisés aux risques numériques courants. C'est une base pratique, ancrée dans la réalité du terrain plutôt que dans la théorie pure.",
+      "logo": "assets/images.png"
+    },
+    {
+      "titre": "Réseautique et serveurs sous Linux",
+      "descriptif": "Les participants acquièrent des compétences fondamentales en réseautique, puis en administration de systèmes Linux, la base de la majorité des serveurs utilisés en entreprise. Ils montent leur propre environnement de développement, manipulent le terminal et comprennent les principes de la virtualisation. Aucune connaissance préalable n'est présumée : la formation part des fondations et construit une compétence technique solide. Ces habiletés forment l'assise technique sur laquelle repose le reste du programme. Un employeur y trouve des candidats à l'aise avec des environnements techniques souvent perçus comme une barrière à l'embauche.",
+      "logo": "assets/images.png"
+    },
+    {
+      "titre": "Logistique de travail et gestion de projet",
+      "descriptif": "Les participants apprennent à travailler selon des méthodes utilisées par de vraies équipes techniques : versionnement du code avec Git et GitHub, organisation des livrables, coordination des tâches. Ces pratiques sont intégrées directement dans le contexte des projets du programme plutôt qu'enseignées de façon isolée. Les finissants développent une autonomie de travail réelle, incluant la capacité de reprendre un projet après une interruption. Cette compétence transversale est directement transférable à un contexte professionnel, peu importe le rôle. Les organismes partenaires peuvent s'attendre à des candidats habitués à un cadre de travail structuré et collaboratif.",
+      "logo": "assets/images.png"
+    },
+    {
+      "titre": "Réalisation de projets finaux",
+      "descriptif": "Le programme se conclut par un projet intégrateur qui mobilise l'ensemble des compétences acquises, suivi d'une simulation grandeur nature d'une entreprise fictive comportant sa propre infrastructure technique, ses comptes employés et ses demandes de soutien à traiter. Les participants montent des serveurs, gèrent des accès et résolvent des problèmes techniques réels dans un contexte proche du marché du travail. Cette portion du programme sert de mise à l'épreuve concrète des compétences développées tout au long de la formation. Les finissants terminent avec un portfolio de réalisations tangibles plutôt qu'une simple liste de cours suivis. C'est cette étape qui permet à un employeur ou un organisme partenaire d'évaluer directement le niveau de préparation des candidats.",
+      "logo": "assets/images.png"
+    }
+  ],
+
+  "people": [
+    {
+      "name": "Asher Altena ",
+      "role": "",
+      "initials": "",
+      "img": "images/Asher.png",
+      "hue": 325,
+      "linkedin": "https://www.linkedin.com/in/ashr-ai",
+      "github": "https://github.com/ashr-ai",
+      "bio": "Mon parcours en service à la clientèle, en sécurité chez GardaWorld et comme musicien indépendant m’a permis de développer de bonnes compétences en résolution de problèmes et gestion des priorités, en plus de développer mon sens de l’autonomie. J’ai aussi pu mettre en pratique mon esprit d’analyse et souci du détail dans mon dernier poste d’agent de sécurité où je devais observer attentivement les situations, identifier rapidement les anomalies et intervenir de façon appropriée. Intéressé depuis longtemps par l’univers du numérique, je souhaite maintenant mettre ces forces au service d’un poste de testeur logiciel ou de développeur Web. "
+    },
+    {
+      "name": "Boutaina Kechchany",
+      "role": "",
+      "initials": "",
+      "img": "images/Boutaina.jpg",
+      "hue": 150,
+      "linkedin": "https://www.linkedin.com/in/boutaina-ky",
+      "github": "https://github.com/kjustBou",
+      "bio": "Mon intérêt pour la technologie, les arts et la psychologie, combiné à mon expérience en service à la clientèle et en bijouterie-joaillerie, m’a permis de développer une grande minutie, un œil perspicace et un souci de l'expérience client. Curieuse et toujours prête à apprendre, je suis particulièrement attirée par l’investigation numérique, où l’analyse, la recherche de motifs et la résolution d’énigmes rejoignent naturellement mes intérêts. Je recherche actuellement une première expérience en développement Web, en sécurité générale ou en investigation numérique, afin de mettre à profit ma polyvalence et ma capacité d'adaptation. "
+    },
+    {
+      "name": "Christopher Tremblay",
+      "role": "",
+      "initials": "",
+      "img": "images/test.jpg",
+      "hue": 15,
+      "linkedin": "",
+      "github": "",
+      "bio": "Mon expérience en tant que technicien en audiovisuel m’a permis de développer de solides compétences techniques et méthodologique, notamment sur la résolution de problèmes, la connectivité et la gestion de flux de données. Intéressé par la technologie et la création de contenu, je souhaite maintenant mettre ces forces ainsi que mes compétences en troubleshooting, virtualisation, réseautique, HTML, CSS, JavaScript et Bash au service d’un premier poste de soutien aux utilisateurs ou de développeur Web. "
+    },
+    {
+      "name": "Deimons Hahamovs",
+      "role": "",
+      "initials": "",
+      "img": "images/Deimons.jpg",
+      "hue": 205,
+      "linkedin": "https://www.linkedin.com/in/deimons-hahamovs-045941412/",
+      "github": "https://github.com/Rex-117",
+      "bio": "Après plusieurs années comme technicien en soutien informatique et technicien autonome, j'ai développé de solides compétences en dépannage, en administration réseau et en gestion de systèmes. Passionné de technologie, de jeux vidéo et audiophile dans l'âme, j'aime aussi monter et tester des ordinateurs. Je recherche aujourd'hui un poste où je pourrai mettre à profit ma curiosité technique et mes compétences acquises durant mon parcours, que ce soit en développement web, en cybersécurité ou en soutien informatique avancé. "
+    },
+    {
+      "name": "Harley Rankin ",
+      "role": "",
+      "initials": "",
+      "img": "images/test.jpg",
+      "hue": 275,
+      "linkedin": "",
+      "github": "",
+      "bio": "Suite à une première expérience en service à la clientèle, je souhaite poursuivre mon parcours en élargissant mes compétences vers le développement Web, le soutien informatique et la réseautique. Passionné par l’informatique et la technologie, j’aime résoudre des problèmes, apprendre de nouveaux outils et mettre mes connaissances en pratique à travers des projets concrets. Je recherche un poste dans le domaine des TI où je pourrai mettre à profit mes compétences, contribuer à une équipe et continuer à développer mon expertise. "
+    },
+    {
+      "name": "Manel Ben Halima",
+      "role": "",
+      "initials": "",
+      "img": "images/Manel.jpg",
+      "hue": 45,
+      "linkedin": "https://www.linkedin.com/in/manel-ben-halima-666ab3201",
+      "github": "https://github.com/ManelBenH",
+      "bio": "Tout a commencé avec un diplôme en design obtenu en 2016. Depuis, je n’ai jamais vraiment arrêté de créer, d’animer et de recommencer. Un logo qui prend vie, une charte qui tient debout, une animation qui donne le rythme juste : c'est ce langage-là que je parle le mieux. J’ajoute aujourd’hui une nouvelle corde à mon arc, le code, en particulier le HTML, le CSS et le JavaScript, pour élargir ma vision et rester polyvalente. Je suis actuellement à la recherche d’un emploi en développement Web et en création de contenu numérique, où je pourrai mettre à profit ma créativité et mes compétences techniques. "
+    },
+    {
+      "name": "Marc Maurice Freeman",
+      "role": "",
+      "initials": "",
+      "img": "images/Marc Maurice.png",
+      "hue": 190,
+      "linkedin": "https://www.linkedin.com/in/marc-maurice-freeman-324816394",
+      "github": "https://github.com/shadownet21",
+      "bio": "Je suis un professionnel TI avec plus de 5 ans d’expérience en développement Web, soutien informatique et gestion de bases de données. J’ai conçu des applications et accompagné un réseau de plus de 120 institutions financières. Curieux et orienté vers les solutions, j’aime comprendre les besoins, structurer le travail et transformer des problèmes complexes en solutions concrètes et fiables. Je souhaite mettre cette polyvalence et mon sens de l’organisation au service de vos projets. "
+    },
+    {
+      "name": "Mouad El Haddadi ",
+      "role": "",
+      "initials": "",
+      "img": "images/Mouad.jpg",
+      "hue": 265,
+      "linkedin": "https://www.linkedin.com/in/mouad-el-haddadi/",
+      "github": "https://github.com/mouadm0uad",
+      "bio": "Fort de plus de trois ans d'expérience en service à la clientèle bilingue et titulaire d’un baccalauréat en administration des affaires, je possède de solides compétences en résolution de problèmes, en gestion du stress et en travail d'équipe. Mordu de technologie, j'ai développé au fil des années une curiosité naturelle pour les systèmes informatiques et une grande facilité à évoluer dans des environnements techniques. Je suis maintenant à la recherche d'un poste en soutien technique où je pourrai mettre à profit mon sens du service à la clientèle et ma capacité d'adaptation pour contribuer efficacement à une équipe. "
+    },
+    {
+      "name": "Schleiden Alcius ",
+      "role": "",
+      "initials": "",
+      "img": "images/Schleiden.jpg",
+      "hue": 340,
+      "linkedin": "https://www.linkedin.com/in/schleiden-a-61621038a/",
+      "github": "https://github.com/schleidenalcius",
+      "bio": "Bien que je sois encore au début de mon apprentissage en développement Web, j’ai développé de solides compétences en HTML, CSS et JavaScript grâce à mon parcours chez CyberCap ainsi qu’à mes cours en sciences informatiques au Collège Bois-de-Boulogne. Particulièrement intéressé par les jeux vidéo et la philosophie, j’ai conçu un site Web interactif sous forme de jeu musical et un second consacré aux grands esprits qui ont marqué l’histoire. Je désire maintenant poursuivre ma carrière dans un poste de développeur Web et apprendre rapidement au sein d'une équipe. "
+    }
+  ]
+}
