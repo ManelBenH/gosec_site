@@ -7,14 +7,17 @@
   <title>Notre équipe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -105,7 +108,7 @@
 
       <div class="team-row" id="teamRow">
         <header class="team-intro">
-          
+
           <h2>Rencontrer <br> <span>les participant·es</span></h2>
           <hr class="intro-divider">
           <p>Découvrez les profils des participantes et participants d'Initiative avenir, leurs parcours, leurs
@@ -143,13 +146,16 @@
           </div>
         </div>
 
-        <form id="involve-form" novalidate>
+        <form id="involve-form" name="gosec-inscription" method="POST" data-netlify="true" netlify novalidate>
+          <input type="hidden" name="form-name" value="gosec-inscription">
+
           <div class="row">
             <div class="field">
               <label for="prenom">Prénom<span class="req">*</span></label>
               <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
               <div class="field-error" id="err-prenom"></div>
             </div>
+
             <div class="field">
               <label for="nom">Nom<span class="req">*</span></label>
               <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
@@ -163,6 +169,7 @@
               <input type="email" id="courriel" name="courriel" placeholder="exemple@domaine.com" required>
               <div class="field-error" id="err-courriel"></div>
             </div>
+
             <div class="field">
               <label for="organisation">Organisation</label>
               <input type="text" id="organisation" name="organisation" placeholder="Nom de votre organisation">
@@ -170,21 +177,26 @@
           </div>
 
           <div class="group-label">J'aimerais en savoir plus sur :</div>
-          <div class="group-sub">Sélectionnez toutes les réponses qui s'appliquent.</div>
+          <div class="group-sub">
+            Sélectionnez toutes les réponses qui s'appliquent.
+          </div>
 
           <div class="checks">
             <label class="check-item">
               <input type="checkbox" name="interets" value="L'embauche de participant·es">
               L'embauche de participant·es
             </label>
+
             <label class="check-item">
               <input type="checkbox" name="interets" value="Le mentorat">
               Le mentorat
             </label>
+
             <label class="check-item">
               <input type="checkbox" name="interets" value="L'animation d'un atelier ou d'une conférence">
               L'animation d'un atelier ou d'une conférence
             </label>
+
             <label class="check-item">
               <input type="checkbox" name="interets" value="La proposition d'un projet ou d'une collaboration">
               La proposition d'un projet ou d'une collaboration
@@ -193,8 +205,10 @@
 
           <div class="autre-row">
             <input type="checkbox" id="autre-check" name="autre-check">
+
             <label for="autre-check">Autre :</label>
-            <input type="text" id="autre-texte" name="autre-texte" placeholder="Précisez votre intérêt" disabled>
+
+            <input type="text" id="autre-texte" name="autre_interet" placeholder="Précisez votre intérêt" disabled>
           </div>
 
           <label class="newsletter">
@@ -205,6 +219,7 @@
           <div class="submit-row">
             <button type="submit" id="submit-btn">
               Envoyer ma demande
+
               <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
                 <path d="M0.5 6H14.5M14.5 6L9.5 1M14.5 6L9.5 11" stroke="var(--color-primary-dark)" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round" />
@@ -229,12 +244,12 @@
 
   <footer class="site-footer">
     <div class="footer-col">
-      <a href="#Initiative-avenir">Initiative avenir</a>
-      <a href="#participant-es">participant·es</a>
-      <a href="#Simpliquer">S’impliquer</a>
+      <a href="#about">Initiative Avenir</a>
+      <a href="#team">Participant·es</a>
+      <a href="#involve">S'impliquer</a>
     </div>
-    <div class="footer-giant">MERCI</div>
-    <div class="footer-credit">Conçu &amp; développé par Manel Ben Halima et Asher Josue Altena — © 2026</div>
+    <div class="footer-giant">MERCI !</div>
+    <div class="footer-credit">Conçu &amp; développé par Manel Ben Halima et Asher Altena — © 2026</div>
   </footer>
 
   <script src="script.js"></script>
