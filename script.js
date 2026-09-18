@@ -969,30 +969,12 @@ function initTeam(PEOPLE) {
    ============================================================ */
 
 function initForm() {
-  const form =
-    document.getElementById(
-      "involve-form"
-    );
-
-  const autreCheck =
-    document.getElementById(
-      "autre-check"
-    );
-
-  const autreTexte =
-    document.getElementById(
-      "autre-texte"
-    );
-
-  const toast =
-    document.getElementById(
-      "involve-toast"
-    );
-
-  const toastText =
-    document.getElementById(
-      "involve-toast-text"
-    );
+  const form = document.getElementById("involve-form");
+  const autreCheck = document.getElementById("autre-check");
+  const autreTexte = document.getElementById("autre-texte");
+  const toast = document.getElementById("involve-toast");
+  const toastText = document.getElementById("involve-toast-text");
+  const submitBtn = document.getElementById("submit-btn");
 
   if (
     !form ||
@@ -1004,258 +986,136 @@ function initForm() {
     return;
   }
 
-  autreCheck.addEventListener(
-    "change",
-    () => {
-      autreTexte.disabled =
-        !autreCheck.checked;
+  autreCheck.addEventListener("change", () => {
+    autreTexte.disabled = !autreCheck.checked;
 
-      if (autreCheck.checked) {
-        autreTexte.focus();
-      } else {
-        autreTexte.value = "";
-      }
+    if (autreCheck.checked) {
+      autreTexte.focus();
+    } else {
+      autreTexte.value = "";
     }
-  );
+  });
 
   function showToast(message) {
-    toastText.textContent =
-      message;
-
+    toastText.textContent = message;
     toast.classList.add("show");
 
-    clearTimeout(
-      showToast.timer
-    );
+    clearTimeout(showToast.timer);
 
-    showToast.timer =
-      setTimeout(() => {
-        toast.classList.remove(
-          "show"
-        );
-      }, 3800);
+    showToast.timer = setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3800);
   }
 
   function setError(fieldId, message) {
-    const input =
-      document.getElementById(
-        fieldId
-      );
-
-    const error =
-      document.getElementById(
-        `err-${fieldId}`
-      );
+    const input = document.getElementById(fieldId);
+    const error = document.getElementById(`err-${fieldId}`);
 
     if (!input || !error) {
       return;
     }
 
-    input.classList.toggle(
-      "invalid",
-      Boolean(message)
-    );
-
-    error.textContent =
-      message;
+    input.classList.toggle("invalid", Boolean(message));
+    error.textContent = message;
   }
 
   function validEmail(value) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(
-      value
-    );
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
   }
 
   function validate() {
     let valid = true;
 
-    const prenom =
-      document
-        .getElementById("prenom")
-        .value.trim();
-
-    const nom =
-      document
-        .getElementById("nom")
-        .value.trim();
-
-    const courriel =
-      document
-        .getElementById("courriel")
-        .value.trim();
+    const prenom = document.getElementById("prenom").value.trim();
+    const nom = document.getElementById("nom").value.trim();
+    const courriel = document.getElementById("courriel").value.trim();
 
     if (!prenom) {
-      setError(
-        "prenom",
-        "Le prénom est requis."
-      );
-
+      setError("prenom", "Le prénom est requis.");
       valid = false;
     } else {
-      setError(
-        "prenom",
-        ""
-      );
+      setError("prenom", "");
     }
 
     if (!nom) {
-      setError(
-        "nom",
-        "Le nom est requis."
-      );
-
+      setError("nom", "Le nom est requis.");
       valid = false;
     } else {
-      setError(
-        "nom",
-        ""
-      );
+      setError("nom", "");
     }
 
     if (!courriel) {
-      setError(
-        "courriel",
-        "Le courriel est requis."
-      );
-
+      setError("courriel", "Le courriel est requis.");
       valid = false;
     } else if (!validEmail(courriel)) {
-      setError(
-        "courriel",
-        "Format de courriel invalide."
-      );
-
+      setError("courriel", "Format de courriel invalide.");
       valid = false;
     } else {
-      setError(
-        "courriel",
-        ""
-      );
+      setError("courriel", "");
     }
 
     return valid;
   }
 
-  function downloadJSON(data) {
-    const blob = new Blob(
-      [
-        JSON.stringify(
-          data,
-          null,
-          2
-        )
-      ],
-      {
-        type: "application/json"
-      }
-    );
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-    const url =
-      URL.createObjectURL(blob);
+    if (!validate()) {
+      showToast("Veuillez corriger les champs en rouge.");
+      return;
+    }
 
-    const link =
-      document.createElement("a");
+    const interets = Array.from(
+      form.querySelectorAll('input[name="interets"]:checked')
+    ).map((input) => input.value);
 
-    const timestamp =
-      new Date()
-        .toISOString()
-        .replace(
-          /[:.]/g,
-          "-"
-        );
+    const autreInteret = autreTexte.value.trim();
 
-    link.href = url;
+    if (autreCheck.checked && autreInteret) {
+      interets.push(`Autre: ${autreInteret}`);
+    }
 
-    link.download =
-      `simpliquer-${timestamp}.json`;
+    const data = {
+      prenom: document.getElementById("prenom").value.trim(),
+      nom: document.getElementById("nom").value.trim(),
+      courriel: document.getElementById("courriel").value.trim(),
+      organisation: document
+        .getElementById("organisation")
+        .value.trim(),
+      interets: interets.join(", "),
+      infolettre: document.getElementById("newsletter").checked,
+      autre_interet: autreInteret,
+      date_soumission: new Date().toISOString()
+    };
 
-    document.body.appendChild(
-      link
-    );
-
-    link.click();
-
-    document.body.removeChild(
-      link
-    );
-
-    URL.revokeObjectURL(url);
-  }
-
-  form.addEventListener(
-    "submit",
-    (event) => {
-      event.preventDefault();
-
-      if (!validate()) {
-        showToast(
-          "Veuillez corriger les champs en rouge."
-        );
-
-        return;
+    try {
+      if (submitBtn) {
+        submitBtn.disabled = true;
       }
 
-      const interets =
-        Array.from(
-          form.querySelectorAll(
-            'input[name="interets"]:checked'
-          )
-        ).map(
-          (input) => input.value
-        );
+      const formData = new URLSearchParams();
 
-      if (
-        autreCheck.checked &&
-        autreTexte.value.trim()
-      ) {
-        interets.push(
-          `Autre: ${autreTexte.value.trim()}`
-        );
+      formData.append("form-name", "gosec-inscription");
+      formData.append("prenom", data.prenom);
+      formData.append("nom", data.nom);
+      formData.append("courriel", data.courriel);
+      formData.append("organisation", data.organisation);
+      formData.append("interets", data.interets);
+      formData.append("infolettre", data.infolettre ? "Oui" : "Non");
+      formData.append("autre_interet", data.autre_interet);
+      formData.append("date_soumission", data.date_soumission);
+
+      const response = await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: formData.toString()
+      });
+
+      if (!response.ok) {
+        throw new Error("Erreur lors de l'envoi du formulaire.");
       }
-
-      const data = {
-        prenom:
-          document
-            .getElementById(
-              "prenom"
-            )
-            .value.trim(),
-
-        nom:
-          document
-            .getElementById(
-              "nom"
-            )
-            .value.trim(),
-
-        courriel:
-          document
-            .getElementById(
-              "courriel"
-            )
-            .value.trim(),
-
-        organisation:
-          document
-            .getElementById(
-              "organisation"
-            )
-            .value.trim(),
-
-        interets,
-
-        infolettre:
-          document
-            .getElementById(
-              "newsletter"
-            )
-            .checked,
-
-        date_soumission:
-          new Date().toISOString()
-      };
-
-      downloadJSON(data);
 
       showToast(
         "Demande envoyée. Merci pour votre intérêt !"
@@ -1263,14 +1123,22 @@ function initForm() {
 
       form.reset();
 
-      autreTexte.disabled =
-        true;
+      autreTexte.disabled = true;
 
-      document.getElementById(
-        "newsletter"
-      ).checked = true;
+      document.getElementById("newsletter").checked = true;
+
+    } catch (error) {
+      console.error("Erreur formulaire :", error);
+
+      showToast(
+        "Une erreur est survenue. Veuillez réessayer."
+      );
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+      }
     }
-  );
+  });
 }
 
 /* ============================================================
