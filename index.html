@@ -103,7 +103,6 @@
 
       <div class="team-row" id="teamRow">
         <header class="team-intro">
-          <div class="eyebrow"><span class="num">02</span><span class="line"></span></div>
           <h2>Rencontrer <br>les participant·es</h2>
           <hr class="intro-divider">
           <p>Découvrez les profils des participantes et participants d'Initiative avenir, leurs parcours, leurs
@@ -128,7 +127,6 @@
     <section class="involve-section" id="involve">
       <div class="wrap">
         <div class="intro">
-          <div class="eyebrow"><span class="num">03</span><span class="line"></span></div>
           <h1><span class="grad">S'impliquer</span></h1>
           <p class="lead">Vous souhaitez soutenir Initiative Avenir et contribuer au parcours des participantes et
             participants? Faites-nous part de votre intérêt.</p>
@@ -142,13 +140,16 @@
           </div>
         </div>
 
-        <form id="involve-form" novalidate>
+        <form id="involve-form" name="gosec-inscription" method="POST" data-netlify="true" netlify novalidate>
+          <input type="hidden" name="form-name" value="gosec-inscription">
+
           <div class="row">
             <div class="field">
               <label for="prenom">Prénom<span class="req">*</span></label>
               <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
               <div class="field-error" id="err-prenom"></div>
             </div>
+
             <div class="field">
               <label for="nom">Nom<span class="req">*</span></label>
               <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
@@ -162,6 +163,7 @@
               <input type="email" id="courriel" name="courriel" placeholder="exemple@domaine.com" required>
               <div class="field-error" id="err-courriel"></div>
             </div>
+
             <div class="field">
               <label for="organisation">Organisation</label>
               <input type="text" id="organisation" name="organisation" placeholder="Nom de votre organisation">
@@ -169,21 +171,26 @@
           </div>
 
           <div class="group-label">J'aimerais en savoir plus sur :</div>
-          <div class="group-sub">Sélectionnez toutes les réponses qui s'appliquent.</div>
+          <div class="group-sub">
+            Sélectionnez toutes les réponses qui s'appliquent.
+          </div>
 
           <div class="checks">
             <label class="check-item">
               <input type="checkbox" name="interets" value="L'embauche de participant·es">
               L'embauche de participant·es
             </label>
+
             <label class="check-item">
               <input type="checkbox" name="interets" value="Le mentorat">
               Le mentorat
             </label>
+
             <label class="check-item">
               <input type="checkbox" name="interets" value="L'animation d'un atelier ou d'une conférence">
               L'animation d'un atelier ou d'une conférence
             </label>
+
             <label class="check-item">
               <input type="checkbox" name="interets" value="La proposition d'un projet ou d'une collaboration">
               La proposition d'un projet ou d'une collaboration
@@ -192,8 +199,10 @@
 
           <div class="autre-row">
             <input type="checkbox" id="autre-check" name="autre-check">
+
             <label for="autre-check">Autre :</label>
-            <input type="text" id="autre-texte" name="autre-texte" placeholder="Précisez votre intérêt" disabled>
+
+            <input type="text" id="autre-texte" name="autre_interet" placeholder="Précisez votre intérêt" disabled>
           </div>
 
           <label class="newsletter">
@@ -204,6 +213,7 @@
           <div class="submit-row">
             <button type="submit" id="submit-btn">
               Envoyer ma demande
+
               <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
                 <path d="M0.5 6H14.5M14.5 6L9.5 1M14.5 6L9.5 11" stroke="var(--color-primary-dark)" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round" />
@@ -228,12 +238,12 @@
 
   <footer class="site-footer">
     <div class="footer-col">
-      <a href="#Initiative-avenir">Initiative avenir</a>
-      <a href="#participant-es">participant·es</a>
-      <a href="#Simpliquer">S’impliquer</a>
+      <a href="#about">Initiative Avenir</a>
+      <a href="#team">Participant·es</a>
+      <a href="#involve">S'impliquer</a>
     </div>
-    <div class="footer-giant">THANKYOU</div>
-    <div class="footer-credit">Conçu &amp; développé par Manel Ben Halima et Asher Josue Altena — © 2026</div>
+    <div class="footer-giant">MERCI !</div>
+    <div class="footer-credit">Conçu &amp; développé par Manel Ben Halima et Asher Altena — © 2026</div>
   </footer>
 
   <script src="script.js"></script>

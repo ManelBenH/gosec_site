@@ -29,6 +29,8 @@
 
   --card-w: clamp(280px, 20vw, 560px);
   --gap: 6vw;
+  --content-width: 1400px;
+  --section-padding-x: 5vw;
 }
 
 * {
@@ -127,13 +129,7 @@ body {
   opacity: 0.05;
   mix-blend-mode: overlay;
 
-  background-image: url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\
-<filter id='n'>\
-<feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/>\
-</filter>\
-<rect width='100%' height='100%' filter='url(%23n)'/>\
-</svg>");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 
@@ -164,7 +160,8 @@ body {
 .team-intro {
   position: relative;
   flex: 0 0 auto;
-  padding: 0 15vw;
+  padding: 0 5vw;
+  margin-right: 290px;
 }
 
 .team-intro h2 {
@@ -572,8 +569,6 @@ body {
 
   aspect-ratio: 1;
 
-  border-radius: 8px;
-
   background: var(--color-white);
 }
 
@@ -931,15 +926,12 @@ body {
 
 .involve-section .wrap {
   width: 100%;
-
+  max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr 1.15fr;
-
   gap: 56px;
-
   align-items: stretch;
-
-  margin: 9vw;
+  margin: 0 auto;
 }
 
 .involve-section .eyebrow {
@@ -1539,7 +1531,7 @@ body {
 
   min-height: 100vh;
 
-  padding: 120px 5vw 100px;
+  padding: 120px var(--section-padding-x) 100px;
 
   background:
     radial-gradient(circle at 80% 20%,
@@ -1554,9 +1546,7 @@ body {
 
 .about-container {
   width: 100%;
-
-  max-width: 1400px;
-
+  max-width: var(--content-width);
   margin: 0 auto;
 }
 
@@ -1585,9 +1575,9 @@ body {
 }
 
 .about-intro {
-  max-width: 850px;
-
+  max-width: 650px;
   margin-top: 35px;
+  margin-left: 4px
 }
 
 .about-intro p {
@@ -1672,7 +1662,7 @@ body {
 
   max-width: 260px;
 
-  font-size: 23px;
+  font-size: 22px;
 
   line-height: 1.15;
 
@@ -1837,4 +1827,39 @@ body {
   font-size: 18px;
 
   line-height: 1.7;
+}
+
+/* ============================================================
+   ALIGNEMENT DES TITRES DE SECTIONS
+   ============================================================ */
+
+:root {
+  --content-width: 1400px;
+  --content-side: max(5vw, calc((100vw - var(--content-width)) / 2));
+}
+
+/* À propos */
+.about-container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+/* Participants */
+.team-intro {
+  padding-left: var(--content-side);
+  padding-right: 0;
+}
+
+/* S'impliquer */
+.involve-section .wrap {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 1200px) {
+  .qr-name {
+    display: none;
+  }
 }
