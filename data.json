@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "name": "Asher Josue Altena ",
@@ -90,3 +91,113 @@
     "bio": "Bien que je sois encore au début de mon apprentissage en développement Web, j’ai développé de solides compétences en HTML, CSS et JavaScript grâce à mon parcours chez CyberCap ainsi qu’à mes cours en sciences informatiques au Collège Bois-de-Boulogne. Particulièrement intéressé par les jeux vidéo et la philosophie, j’ai conçu un site Web interactif sous forme de jeu musical et un second consacré aux grands esprits qui ont marqué l’histoire. Je désire maintenant poursuivre ma carrière dans un poste de développeur Web et apprendre rapidement au sein d'une équipe. "
   }
 ]
+=======
+{
+  "modulesData": [
+    {
+      "titre": "Développement web et programmation",
+      "descriptif": "Les participants apprennent à construire des sites web de zéro, des bases du HTML et du CSS jusqu'à des applications dynamiques avec PHP et une base de données. Chaque projet est déployé en ligne et consultable, pas seulement théorique. Les finissants arrivent avec un portfolio de réalisations concrètes, incluant plusieurs projets web fonctionnels et un projet capstone intégrateur. La programmation orientée objet est abordée de façon ciblée, pour développer une base solide plutôt qu'une surface de connaissances éparpillées. Un employeur peut s'attendre à des candidats capables de contribuer rapidement à un projet web existant.",
+      "logo": ""
+    },
+    {
+      "titre": "Intégration et utilisation des services d'IA",
+      "descriptif": "Les participants apprennent à intégrer des services d'intelligence artificielle dans des projets concrets, notamment via la construction d'un formulaire interactif avec validation. L'approche privilégiée est pratique : l'IA est traitée comme un outil de développement parmi d'autres, pas comme un sujet théorique isolé. Cette compétence s'insère directement dans le parcours de développement web du programme. Les finissants comprennent comment intégrer ces outils dans un flux de travail réel. Pour un employeur, cela signifie des candidats déjà familiers avec l'usage pratique de l'IA en contexte professionnel.",
+      "logo": ""
+    },
+    {
+      "titre": "Éthique numérique et cybersécurité",
+      "descriptif": "Les participants développent des réflexes de sécurité numérique directement applicables en milieu de travail : gestion des accès, bonnes pratiques de mots de passe, hygiène numérique générale. Le module couvre aussi les enjeux éthiques propres au domaine technologique. Cette formation prépare les finissants à agir de façon responsable dans un environnement professionnel, peu importe le poste occupé. Les organismes partenaires peuvent s'attendre à des candidats sensibilisés aux risques numériques courants. C'est une base pratique, ancrée dans la réalité du terrain plutôt que dans la théorie pure.",
+      "logo": ""
+    },
+    {
+      "titre": "Réseautique et serveurs sous Linux",
+      "descriptif": "Les participants acquièrent des compétences fondamentales en réseautique, puis en administration de systèmes Linux, la base de la majorité des serveurs utilisés en entreprise. Ils montent leur propre environnement de développement, manipulent le terminal et comprennent les principes de la virtualisation. Aucune connaissance préalable n'est présumée : la formation part des fondations et construit une compétence technique solide. Ces habiletés forment l'assise technique sur laquelle repose le reste du programme. Un employeur y trouve des candidats à l'aise avec des environnements techniques souvent perçus comme une barrière à l'embauche.",
+      "logo": ""
+    },
+    {
+      "titre": "Logistique de travail et gestion de projet",
+      "descriptif": "Les participants apprennent à travailler selon des méthodes utilisées par de vraies équipes techniques : versionnement du code avec Git et GitHub, organisation des livrables, coordination des tâches. Ces pratiques sont intégrées directement dans le contexte des projets du programme plutôt qu'enseignées de façon isolée. Les finissants développent une autonomie de travail réelle, incluant la capacité de reprendre un projet après une interruption. Cette compétence transversale est directement transférable à un contexte professionnel, peu importe le rôle. Les organismes partenaires peuvent s'attendre à des candidats habitués à un cadre de travail structuré et collaboratif.",
+      "logo": ""
+    },
+    {
+      "titre": "Réalisation de projets finaux",
+      "descriptif": "Le programme se conclut par un projet intégrateur qui mobilise l'ensemble des compétences acquises, suivi d'une simulation grandeur nature d'une entreprise fictive comportant sa propre infrastructure technique, ses comptes employés et ses demandes de soutien à traiter. Les participants montent des serveurs, gèrent des accès et résolvent des problèmes techniques réels dans un contexte proche du marché du travail. Cette portion du programme sert de mise à l'épreuve concrète des compétences développées tout au long de la formation. Les finissants terminent avec un portfolio de réalisations tangibles plutôt qu'une simple liste de cours suivis. C'est cette étape qui permet à un employeur ou un organisme partenaire d'évaluer directement le niveau de préparation des candidats.",
+      "logo": ""
+    }
+  ],
+  "people": [
+    {
+      "name": "Manel Ben Halima",
+      "role": "",
+      "img": "images/PhotoManel.jpg",
+      "hue": 325,
+      "initials": "",
+      "bio": "Tout a commencé avec un diplôme en design obtenu en 2016. Depuis, je n'ai jamais vraiment arrêté de créer, d'animer et de recommencer. Un logo qui prend vie, une charte qui tient debout, une animation qui donne le rythme juste : c'est ce langage-là que je parle le mieux. J’ajoute aujourd’hui une nouvelle corde à mon arc, le code, en particulier le HTML, le CSS et le JavaScript, pour élargir ma vision et rester polyvalente. Je suis actuellement à la recherche d’un emploi en développement Web et en création de contenu numérique, où je pourrai mettre à profit ma créativité et mes compétences techniques"
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 150,
+      "initials": "",
+      "bio": "Antoine est un participant d'Initiative avenir."
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 15,
+      "initials": "",
+      "bio": "Léa est une participante d'Initiative avenir."
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 205,
+      "initials": "",
+      "bio": "Nathan est un participant d'Initiative avenir."
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 275,
+      "initials": "",
+      "bio": "Sofia est une participante d'Initiative avenir."
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 45,
+      "initials": "",
+      "bio": "Maxime est un participant d'Initiative avenir."
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 190,
+      "initials": "",
+      "bio": "Juliette est une participante d'Initiative avenir."
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 265,
+      "initials": "",
+      "bio": "Ilyas est un participant d'Initiative avenir."
+    },
+    {
+      "name": "--",
+      "role": "",
+      "img": "images/test.jpg",
+      "hue": 340,
+      "initials": "",
+      "bio": "Emma est une participante d'Initiative avenir."
+    }
+  ]
+}
+>>>>>>> 5e231ffff0aacc21ea1dc87355cabfa15e9478bf
