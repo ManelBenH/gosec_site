@@ -101,7 +101,7 @@
   .team-intro{
     position:relative;
     flex:0 0 auto;
-    padding:0 0 0 15vw;
+    padding:0 15vw 0 15vw;
     box-sizing:border-box;
   }
   .team-intro h2{
@@ -115,7 +115,7 @@
   .team-intro p{
     font-size:20px;
     line-height:1.55;
-    color:var(--fg-dim);
+    color:var( --color-white);
     max-width:600px;
     margin:0 0px;
   }
@@ -139,7 +139,7 @@
     align-items:center;
     gap:var(--gap);
     margin:0;
-    padding:0 6vw 0 3vw;
+    padding:0 6vw 0 0vw;
     width:max-content;
     will-change:transform;
     touch-action:pan-y;
@@ -324,9 +324,9 @@
     margin:0;
     font-family:"Roboto Condensed", sans-serif;
     font-weight:200;
-    font-size:19px;
+    font-size: clamp(12px, 3vw, 24px);
     line-height:1.6;
-    color:var(--fg-dim);
+    color:var( --color-white);
     max-width:100%
   }
 
@@ -547,7 +547,7 @@
     color:var(--color-primary);
   }
  .involve-section .lead{
-  color:var(--i-text-dim);
+  color:var( --color-primary-dark);
   font-size:23px;
   line-height:1.6;
   max-width:50ch;

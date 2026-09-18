@@ -360,6 +360,18 @@
         bio.style.opacity = '1';
       }, 300);
 
+      // 3. La piste vient de s'élargir (+420px) : on recalcule tout
+      //    de suite les bornes de glisser-déposer avec la largeur
+      //    cible, puis à nouveau une fois l'animation de largeur
+      //    terminée (transitionend), pour être exact même si
+      //    plusieurs cartes sont ouvertes coup sur coup.
+      computeBounds();
+      card.addEventListener('transitionend', function onOpenEnd(e){
+        if (e.propertyName !== 'width') return;
+        card.removeEventListener('transitionend', onOpenEnd);
+        computeBounds();
+      });
+
     }else{
       // 1. Le texte disparaît
       bio.style.opacity = '0';
