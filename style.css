@@ -45,9 +45,32 @@ body {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  color: var(--fg);
-  overflow-x: hidden;
+  
+}
+h1{
+   font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+  font-style: normal;
+  color: var(--color-primary-dark);
+
+
+
+}
+h2{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  color: var(--color-white);
+   /* font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+
+}
+
+p{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 
@@ -160,12 +183,10 @@ body {
 .team-intro {
   position: relative;
   flex: 0 0 auto;
-  padding: 0 5vw;
-  margin-right: 290px;
+  padding: 0 12vw;
 }
 
 .team-intro h2 {
-  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   font-size: clamp(40px, 6vw, 68px);
   line-height: 1.02;
@@ -173,6 +194,15 @@ body {
   margin: 0 0 32px;
 
   letter-spacing: -0.02em;
+}
+
+.team-intro h2 span{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-primary-dark);
+  
+  
 }
 
 .team-intro p {
@@ -258,7 +288,7 @@ body {
 
 .card.active {
   z-index: 2;
-  width: calc(var(--card-w) + 420px);
+  width: calc(var(--card-w) + 520px);
 }
 
 
@@ -319,7 +349,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  font-family: "Nunito Sans", sans-serif;
+  
   font-size: 64px;
   font-weight: 500;
 
@@ -387,8 +417,10 @@ body {
 .meta h3 {
   margin: 0;
 
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 500;
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: var(--color-white);
 
   font-size: var(--name-size, 40px);
 
@@ -448,10 +480,10 @@ body {
 }
 
 .card.active .bio {
-  flex: 0 0 420px;
+  flex: 0 0 520px;
 
-  width: 420px;
-  max-width: 420px;
+  width: 520px;
+  max-width: 520px;
 
   opacity: 1;
 
@@ -466,9 +498,6 @@ body {
   margin: 0;
 
   max-width: 100%;
-
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 200;
 
   font-size: clamp(12px, 3vw, 24px);
   line-height: 1.6;
@@ -581,7 +610,7 @@ body {
 
   min-width: 0;
 
-  font-family: "Nunito Sans", sans-serif;
+  
 
   color: var(--color-black);
 }
@@ -661,7 +690,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  font-family: "Nunito Sans", sans-serif;
+  
   font-size: 10.5px;
   font-weight: 500;
 
@@ -911,7 +940,7 @@ body {
 
   color: var(--i-text);
 
-  font-family: "Nunito Sans", sans-serif;
+  
 
   display: flex;
   align-items: center;
@@ -996,7 +1025,6 @@ body {
 }
 
 .involve-section .tagline span {
-  font-family: "Nunito Sans", sans-serif;
 
   font-size: 22px;
 
@@ -1370,7 +1398,6 @@ body {
 
   z-index: 10;
 
-  font-family: "Nunito Sans", sans-serif;
 }
 
 .involve-toast.show {
@@ -1442,8 +1469,6 @@ body {
       var(--bg-2));
 
   color: var(--fg);
-
-  font-family: "Nunito Sans", sans-serif;
 
   border-top: 1px solid var(--line);
 
@@ -1531,7 +1556,7 @@ body {
 
   min-height: 100vh;
 
-  padding: 120px var(--section-padding-x) 100px;
+  padding:  6vw 12vw 0 12vw ;
 
   background:
     radial-gradient(circle at 80% 20%,
@@ -1546,12 +1571,10 @@ body {
 
 .about-container {
   width: 100%;
-  max-width: var(--content-width);
-  margin: 0 auto;
 }
 
 .about-section h1 {
-  max-width: 900px;
+  max-width: 100%;
 
   margin: 0;
 
@@ -1566,18 +1589,22 @@ body {
 
 .about-section h1 span {
   display: block;
-
-  color: #2f9e4d;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  color: var(--color-primary);
 }
 
 .about-content {
   width: 100%;
+  align-items: center;
 }
 
 .about-intro {
-  max-width: 650px;
-  margin-top: 35px;
-  margin-left: 4px
+  max-width: 100%;
+
+  margin-top: 5vw;
+  
 }
 
 .about-intro p {
@@ -1585,7 +1612,8 @@ body {
 
   color: rgba(15, 56, 48, 0.72);
 
-  font-size: clamp(17px, 2vw, 21px);
+  font-size: clamp(17px, 4vw, 24px);  
+  
 
   line-height: 1.6;
 }
