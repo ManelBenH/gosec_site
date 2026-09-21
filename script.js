@@ -53,16 +53,20 @@ function initModules(modulesData) {
     return;
   }
 
-  function openModal(module) {
+  function setLogo(image, module) {
     if (module.logo) {
-      modalLogo.src = module.logo;
-      modalLogo.alt = module.titre || "";
-      modalLogo.style.display = "";
+      image.src = module.logo;
+      image.alt = module.titre || "";
+      image.style.display = "";
     } else {
-      modalLogo.removeAttribute("src");
-      modalLogo.alt = "";
-      modalLogo.style.display = "none";
+      image.removeAttribute("src");
+      image.alt = "";
+      image.style.display = "none";
     }
+  }
+
+  function openModal(module) {
+    setLogo(modalLogo, module);
 
     modalTitle.textContent = module.titre || "";
     modalDescription.textContent = module.descriptif || "";
@@ -104,30 +108,13 @@ function initModules(modulesData) {
     }
 
     if (logo) {
-      if (module.logo) {
-        logo.src = module.logo;
-        logo.alt = module.titre || "";
-        logo.style.display = "";
-      } else {
-        logo.removeAttribute("src");
-        logo.alt = "";
-        logo.style.display = "none";
-      }
+      setLogo(logo, module);
     }
 
+    /* <button> : le clavier (Entrée / Espace) déclenche déjà "click". */
     card.addEventListener("click", () => {
       openModal(module);
     });
-
-    card.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        openModal(module);
-      }
-    });
-
-    card.setAttribute("tabindex", "0");
-    card.setAttribute("role", "button");
   });
 
   closeButton.addEventListener("click", closeModal);
@@ -177,11 +164,7 @@ function initTeam(PEOPLE) {
     return;
   }
 
-  function extractHandle(url) {
-    return url.replace(/\/+$/, "").split("/").pop();
-  }
-
-  function buildQrItem(url, label, type, name) {
+  function buildQrItem(url, label, type) {
     if (!url) {
       return "";
     }
@@ -211,7 +194,6 @@ function initTeam(PEOPLE) {
 
           <span class="qr-label-text">
             <span class="qr-platform">${label}</span>
-            <span class="qr-name">${name}</span>
           </span>
         </span>
       </a>
@@ -252,15 +234,13 @@ function initTeam(PEOPLE) {
     const qrLinkedin = buildQrItem(
       person.linkedin,
       "LinkedIn",
-      "linkedin",
-      (person.name || "").trim()
+      "linkedin"
     );
 
     const qrGithub = buildQrItem(
       person.github,
       "GitHub",
-      "github",
-      person.github ? extractHandle(person.github) : ""
+      "github"
     );
 
     const qrGrid =
@@ -416,32 +396,6 @@ function initTeam(PEOPLE) {
     }
 
     if (willOpen) {
-      /*
-        Ferme les autres cartes avant d'ouvrir celle-ci.
-      */
-      cards.forEach((otherCard) => {
-        if (
-          otherCard !== card &&
-          otherCard.classList.contains("active")
-        ) {
-          otherCard.classList.remove("active");
-          otherCard.setAttribute(
-            "aria-expanded",
-            "false"
-          );
-
-          const otherQr =
-            otherCard.querySelector(".qr-reveal");
-
-          if (otherQr) {
-            otherQr.setAttribute(
-              "aria-hidden",
-              "true"
-            );
-          }
-        }
-      });
-
       card.classList.add("active");
 
       card.setAttribute(
@@ -695,12 +649,18 @@ function initTeam(PEOPLE) {
     const availableWidth =
       teamSection.clientWidth;
 
-    minX = Math.min(
-      0,
-      availableWidth -
-      rowWidth -
-      24
-    );
+    /* Disposition en colonne (mobile) : rien à faire glisser. */
+    const isVertical =
+      getComputedStyle(viewport).flexDirection === "column";
+
+    minX = isVertical
+      ? 0
+      : Math.min(
+        0,
+        availableWidth -
+        rowWidth -
+        24
+      );
 
     posX = clamp(
       posX,
